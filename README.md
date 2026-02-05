@@ -45,8 +45,8 @@ This repository contains all my projects, homework solutions, and notes from the
 
 - [x] **[Module 1: Containerization & Infrastructure as Code](#-module-1-containerization--infrastructure-as-code)** ✅
 - [x] **[Module 2: Workflow Orchestration](#-module-2-workflow-orchestration)** ✅
+- [x] **[Module 3: Data Warehousing](#-module-3-data-warehousing)** ✅
 - [ ] **[Workshop 1: Data Ingestion](#-workshop-1-data-ingestion)** 🚧
-- [ ] **[Module 3: Data Warehousing](#-module-3-data-warehousing)**
 - [ ] **[Module 4: Analytics Engineering](#-module-4-analytics-engineering)**
 - [ ] **[Module 5: Batch Processing](#-module-5-batch-processing)**
 - [ ] **[Module 6: Streaming](#-module-6-streaming)**
@@ -121,7 +121,7 @@ graph LR
 - Scheduled BigQuery data loading
 - PostgreSQL to GCS pipelines
 
-**📁 Directory:** [`Module-2-Kestra/`](Module-2-Kestra/)
+**📁 Directory:** [`Module-2-workflow-orchestration/`](Module-2-workflow-orchestration/)
 
 **🎯 Skills Gained:**
 - Building production-grade ETL workflows
@@ -138,7 +138,7 @@ graph LR
 - Data normalization techniques
 - Incremental loading strategies
 
-**Status:** Coming Soon 🚧
+**Status:** 🚧 In Progress
 
 ---
 
@@ -151,7 +151,7 @@ graph LR
 - Cost management
 - Machine learning in BigQuery (BQML)
 
-**Status:** Coming Soon
+**Status:** ✅ Completed
 
 ---
 
@@ -244,7 +244,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials.json"
 ```bash
 cd Module-1-Docker-Terraform
 # or
-cd Module-2-Kestra
+cd Module-2-workflow-orchestration
 ```
 
 4. **Follow module-specific README for setup instructions**
@@ -262,9 +262,9 @@ Each module contains detailed homework solutions with:
 | Module | Homework | Status | Link |
 |--------|----------|--------|------|
 | Module 1 | Docker & Terraform | ✅ Completed | [View](Module-1-Docker-Terraform/README.md) |
-| Module 2 | Kestra Workflows | ✅ Completed | [View](Module-2-Kestra/README.md) |
+| Module 2 | Kestra Workflows | ✅ Completed | [View](Module-2-workflow-orchestration/README.md) |
+| Module 3 | BigQuery | ✅ Completed | [View](Module-3-data-warehouse/README.md) |
 | Workshop 1 | Data Ingestion | ⏳ Pending | - |
-| Module 3 | BigQuery | ⏳ Pending | - |
 | Module 4 | dbt | ⏳ Pending | - |
 | Module 5 | Spark | ⏳ Pending | - |
 | Module 6 | Kafka | ⏳ Pending | - |
