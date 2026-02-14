@@ -8,4 +8,8 @@ dependencies = []
 
 
 [tool.uv.workspace]
-members = ["Module-1-Docker-Terraform", "Module-3-data-warehouse"]
+members = [
+    "Module-1-Docker-Terraform",
+    "Module-3-data-warehouse",
+    "Module-4-analytics-engineering",
+]

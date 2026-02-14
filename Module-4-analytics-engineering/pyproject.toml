@@ -1,10 +1,10 @@
 [project]
-name = "module-3-data-warehouse"
+name = "module-4-analytics-engineering"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12.8"
 dependencies = [
-    "dlt[bigquery,duckdb,gs]>=1.21.0",
-    "google-cloud-storage>=3.9.0",
+    "dbt-duckdb>=1.10.0",
+    "duckdb>=1.4.4",
 ]
