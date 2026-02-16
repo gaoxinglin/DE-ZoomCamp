@@ -47,7 +47,7 @@ This repository contains all my projects, homework solutions, and notes from the
 - [x] **[Module 2: Workflow Orchestration](#-module-2-workflow-orchestration)** ✅
 - [x] **[Module 3: Data Warehousing](#-module-3-data-warehousing)** ✅
 - [ ] **[Workshop 1: Data Ingestion](#-workshop-1-data-ingestion)** 🚧
-- [ ] **[Module 4: Analytics Engineering](#-module-4-analytics-engineering)**
+- [x] **[Module 4: Analytics Engineering](#-module-4-analytics-engineering)** ✅
 - [ ] **[Module 5: Batch Processing](#-module-5-batch-processing)**
 - [ ] **[Module 6: Streaming](#-module-6-streaming)**
 - [ ] **[Final Project](#-final-project)**
@@ -164,7 +164,21 @@ graph LR
 - CI/CD for analytics
 - dbt with DuckDB & BigQuery
 
-**Status:** Coming Soon
+**Key Projects:**
+- NYC taxi data transformation with dbt
+- Medallion architecture implementation (staging, intermediate, marts)
+- Data quality testing and validation
+- Lineage tracking and documentation
+
+**📁 Directory:** [`Module-4-analytics-engineering/`](Module-4-analytics-engineering/)
+
+**🎯 Skills Gained:**
+- Building scalable data models with dbt
+- Implementing tests and documentation
+- Using Jinja for dynamic SQL
+- Working with DuckDB and BigQuery
+
+**Status:** ✅ Completed
 
 ---
 
@@ -265,7 +279,7 @@ Each module contains detailed homework solutions with:
 | Module 2 | Kestra Workflows | ✅ Completed | [View](Module-2-workflow-orchestration/README.md) |
 | Module 3 | BigQuery | ✅ Completed | [View](Module-3-data-warehouse/README.md) |
 | Workshop 1 | Data Ingestion | ⏳ Pending | - |
-| Module 4 | dbt | ⏳ Pending | - |
+| Module 4 | dbt | ✅ Completed | [View](Module-4-analytics-engineering/README.md) |
 | Module 5 | Spark | ⏳ Pending | - |
 | Module 6 | Kafka | ⏳ Pending | - |
 
@@ -403,6 +417,6 @@ Huge thanks to:
 
 Made with ❤️ while learning Data Engineering
 
-Last Updated: February 1, 2026
+Last Updated: February 15, 2026
 
 </div>
