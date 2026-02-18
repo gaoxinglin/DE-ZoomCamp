@@ -213,3 +213,5 @@ __marimo__/
 *.json
 # Data directory
 data/
+
+.bruin.yml
