@@ -8,6 +8,7 @@ with tripdata as
 (
   select *
   from {{ source('raw','fhv_tripdata') }}
+  where dispatching_base_num is not null 
 )
 select
     -- identifiers
