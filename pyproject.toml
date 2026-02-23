@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pandas>=3.0.0",
+]
 
 
 [tool.uv.workspace]
@@ -12,4 +14,5 @@ members = [
     "Module-1-Docker-Terraform",
     "Module-3-data-warehouse",
     "Module-4-analytics-engineering",
+    "Module-5-data-platforms",
 ]

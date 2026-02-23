@@ -215,3 +215,6 @@ __marimo__/
 data/
 
 .bruin.yml
+logs/runs
+logs/*.log
+*.py[cod]
