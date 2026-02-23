@@ -12,10 +12,10 @@ columns:
   - name: VendorID
     type: integer
     description: "A code indicating the TPEP provider that provided the record."
-  - name: tpep_pickup_datetime
+  - name: pickup_datetime
     type: timestamp
     description: "The date and time when the meter was engaged."
-  - name: tpep_dropoff_datetime
+  - name: dropoff_datetime
     type: timestamp
     description: "The date and time when the meter was disengaged."
   - name: passenger_count
@@ -117,6 +117,12 @@ def materialize():
                 if pickup_col:
                     mask = (df[pickup_col] >= pd.to_datetime(start_date_str)) & (df[pickup_col] < pd.to_datetime(end_date_str) + pd.Timedelta(days=1))
                     df = df[mask]
+                    
+                # Normalize column names
+                if 'tpep_pickup_datetime' in df.columns:
+                    df = df.rename(columns={'tpep_pickup_datetime': 'pickup_datetime', 'tpep_dropoff_datetime': 'dropoff_datetime'})
+                elif 'lpep_pickup_datetime' in df.columns:
+                    df = df.rename(columns={'lpep_pickup_datetime': 'pickup_datetime', 'lpep_dropoff_datetime': 'dropoff_datetime'})
                 
                 df['taxi_type'] = taxi_type
                 df['extracted_at'] = datetime.now()
