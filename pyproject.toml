@@ -16,4 +16,5 @@ members = [
     "Module-3-data-warehouse",
     "Module-4-analytics-engineering",
     "Module-5-data-platforms",
+    "Module-6-batch",
 ]
