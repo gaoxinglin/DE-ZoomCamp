@@ -218,3 +218,4 @@ data/
 logs/runs
 logs/*.log
 *.py[cod]
+*.csv

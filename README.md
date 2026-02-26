@@ -46,10 +46,11 @@ This repository contains all my projects, homework solutions, and notes from the
 - [x] **[Module 1: Containerization & Infrastructure as Code](#-module-1-containerization--infrastructure-as-code)** ✅
 - [x] **[Module 2: Workflow Orchestration](#-module-2-workflow-orchestration)** ✅
 - [x] **[Module 3: Data Warehousing](#-module-3-data-warehousing)** ✅
-- [ ] **[Workshop 1: Data Ingestion](#-workshop-1-data-ingestion)** 🚧
+- [x] **[Workshop 1: Data Ingestion](#-workshop-1-data-ingestion)** ✅
 - [x] **[Module 4: Analytics Engineering](#-module-4-analytics-engineering)** ✅
-- [ ] **[Module 5: Batch Processing](#-module-5-batch-processing)**
-- [ ] **[Module 6: Streaming](#-module-6-streaming)**
+- [x] **[Module 5: Data Platforms](#-module-5-data-platforms)** ✅
+- [ ] **[Module 6: Batch Processing](#-module-6-batch-processing)** 🚧
+- [ ] **[Module 7: Streaming](#-module-7-streaming)**
 - [ ] **[Final Project](#-final-project)**
 
 ---
@@ -98,7 +99,7 @@ graph LR
 - Dockerized data ingestion pipeline
 - Terraform GCP infrastructure setup
 
-**📁 Directory:** [`Module-1-Docker-Terraform/`](Module-1-Docker-Terraform/)
+**📁 Directory:** [`Module-1-docker-terraform/`](Module-1-docker-terraform/)
 
 **🎯 Skills Gained:**
 - Container orchestration with Docker Compose
@@ -138,7 +139,9 @@ graph LR
 - Data normalization techniques
 - Incremental loading strategies
 
-**Status:** 🚧 In Progress
+**📁 Directory:** [`Workshop-1-data ingestion/`](Workshop-1-data%20ingestion/)
+
+**Status:** ✅ Completed
 
 ---
 
@@ -182,7 +185,20 @@ graph LR
 
 ---
 
-### ⚡ Module 5: Batch Processing
+### 🔗 Module 5: Data Platforms
+
+**Topics Covered:**
+- Data platform architecture
+- Pipeline orchestration patterns
+- Data ingestion and transformation
+
+**📁 Directory:** [`Module-5-data-platforms/`](Module-5-data-platforms/)
+
+**Status:** ✅ Completed
+
+---
+
+### ⚡ Module 6: Batch Processing
 
 **Topics Covered:**
 - Introduction to Apache Spark
@@ -191,11 +207,13 @@ graph LR
 - Internals of GroupBy and Joins
 - Performance optimization
 
-**Status:** Coming Soon
+**📁 Directory:** [`Module-6-batch/`](Module-6-batch/)
+
+**Status:** 🚧 In Progress
 
 ---
 
-### 🌊 Module 6: Streaming
+### 🌊 Module 7: Streaming
 
 **Topics Covered:**
 - Introduction to Apache Kafka
@@ -203,6 +221,8 @@ graph LR
 - KSQL for stream processing
 - Schema management with Avro
 - Real-time data pipelines
+
+**📁 Directory:** [`Module-7-streaming/`](Module-7-streaming/)
 
 **Status:** Coming Soon
 
@@ -256,7 +276,7 @@ export GOOGLE_APPLICATION_CREDENTIALS="path/to/your/credentials.json"
 
 3. **Navigate to specific module:**
 ```bash
-cd Module-1-Docker-Terraform
+cd Module-1-docker-terraform
 # or
 cd Module-2-workflow-orchestration
 ```
@@ -275,13 +295,14 @@ Each module contains detailed homework solutions with:
 
 | Module | Homework | Status | Link |
 |--------|----------|--------|------|
-| Module 1 | Docker & Terraform | ✅ Completed | [View](Module-1-Docker-Terraform/README.md) |
+| Module 1 | Docker & Terraform | ✅ Completed | [View](Module-1-docker-terraform/README.md) |
 | Module 2 | Kestra Workflows | ✅ Completed | [View](Module-2-workflow-orchestration/README.md) |
 | Module 3 | BigQuery | ✅ Completed | [View](Module-3-data-warehouse/README.md) |
-| Workshop 1 | Data Ingestion | ⏳ Pending | - |
+| Workshop 1 | Data Ingestion | ✅ Completed | [View](Workshop-1-data%20ingestion/README.md) |
 | Module 4 | dbt | ✅ Completed | [View](Module-4-analytics-engineering/README.md) |
-| Module 5 | Spark | ⏳ Pending | - |
-| Module 6 | Kafka | ⏳ Pending | - |
+| Module 5 | Data Platforms | ✅ Completed | [View](Module-5-data-platforms/README.md) |
+| Module 6 | Spark | 🚧 In Progress | [View](Module-6-batch/README.md) |
+| Module 7 | Kafka | ⏳ Pending | [View](Module-7-streaming/) |
 
 ---
 
@@ -417,6 +438,6 @@ Huge thanks to:
 
 Made with ❤️ while learning Data Engineering
 
-Last Updated: February 15, 2026
+Last Updated: February 27, 2026
 
 </div>
