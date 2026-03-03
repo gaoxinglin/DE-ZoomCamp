@@ -219,3 +219,8 @@ logs/runs
 logs/*.log
 *.py[cod]
 *.csv
+
+/fhvhv/
+_SUCCESS
+*.crc
+.part*
