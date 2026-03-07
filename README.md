@@ -49,7 +49,7 @@ This repository contains all my projects, homework solutions, and notes from the
 - [x] **[Workshop 1: Data Ingestion](#-workshop-1-data-ingestion)** ✅
 - [x] **[Module 4: Analytics Engineering](#-module-4-analytics-engineering)** ✅
 - [x] **[Module 5: Data Platforms](#-module-5-data-platforms)** ✅
-- [ ] **[Module 6: Batch Processing](#-module-6-batch-processing)** 🚧
+- [x] **[Module 6: Batch Processing](#-module-6-batch-processing)** ✅
 - [ ] **[Module 7: Streaming](#-module-7-streaming)**
 - [ ] **[Final Project](#-final-project)**
 
@@ -209,7 +209,7 @@ graph LR
 
 **📁 Directory:** [`Module-6-batch/`](Module-6-batch/)
 
-**Status:** 🚧 In Progress
+**Status:** ✅ Completed
 
 ---
 
@@ -301,7 +301,7 @@ Each module contains detailed homework solutions with:
 | Workshop 1 | Data Ingestion | ✅ Completed | [View](Workshop-1-data%20ingestion/README.md) |
 | Module 4 | dbt | ✅ Completed | [View](Module-4-analytics-engineering/README.md) |
 | Module 5 | Data Platforms | ✅ Completed | [View](Module-5-data-platforms/README.md) |
-| Module 6 | Spark | 🚧 In Progress | [View](Module-6-batch/README.md) |
+| Module 6 | Spark | ✅ Completed | [View](Module-6-batch/README.md) |
 | Module 7 | Kafka | ⏳ Pending | [View](Module-7-streaming/) |
 
 ---
