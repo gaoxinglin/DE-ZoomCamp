@@ -12,7 +12,7 @@ dependencies = [
 
 [tool.uv.workspace]
 members = [
-    "Module-1-Docker-Terraform",
+    "Module-1-docker-terraform",
     "Module-3-data-warehouse",
     "Module-4-analytics-engineering",
     "Module-5-data-platforms",
