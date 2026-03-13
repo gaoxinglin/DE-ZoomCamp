@@ -103,8 +103,8 @@ spark.sql("""
     JOIN zones z ON t.PULocationID = z.LocationID
     GROUP BY z.Zone
     ORDER BY trip_count ASC
-    LIMIT 1
+    LIMIT 5
 """).show()
 ```
 
-**Answer: `Arden Heights`** (1 trip)
+**Answer: `Arden Heights` and `Eltingville/Annadale/Prince's Bay`** (1 trip each)

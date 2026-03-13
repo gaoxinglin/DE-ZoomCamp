@@ -1,0 +1,19 @@
+services:
+  spark-master:
+    image: apache/spark:latest
+    # 使用 spark-class 直接在前台启动 Master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    environment:
+      # 开启反向代理：Master UI 将 Worker UI 代理到 localhost:8080/proxy/<worker-id>/
+      # 这样无需暴露 Worker 端口，Worker 链接也可从宿主机直接点击访问
+      - SPARK_MASTER_OPTS=-Dspark.ui.reverseProxy=true -Dspark.ui.reverseProxyUrl=http://localhost:8080
+    ports:
+      - "8080:8080"
+      - "7077:7077"
+
+  spark-worker:
+    image: apache/spark:latest
+    # 使用 spark-class 直接在前台启动 Worker，并连接到 master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    depends_on:
+      - spark-master

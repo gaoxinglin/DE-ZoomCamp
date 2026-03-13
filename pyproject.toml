@@ -17,4 +17,5 @@ members = [
     "Module-4-analytics-engineering",
     "Module-5-data-platforms",
     "Module-6-batch",
+    "Module-7-streaming",
 ]
