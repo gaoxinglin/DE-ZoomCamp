@@ -1,6 +1,7 @@
 services:
   redpanda:
     image: redpandadata/redpanda:v25.3.9
+    container_name: workshop-redpanda-1
     command:
       - redpanda
       - start
@@ -28,3 +29,51 @@ services:
       - 9092:9092
       - 28082:28082
       - 29092:29092
+
+  postgres:
+    image: postgres:16
+    container_name: workshop-postgres-1
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  jobmanager:
+    build:
+      context: .
+      dockerfile: flink/Dockerfile
+    image: workshop-flink-py:1.20
+    container_name: workshop-jobmanager-1
+    command: jobmanager
+    depends_on:
+      - redpanda
+      - postgres
+    ports:
+      - 8081:8081
+    volumes:
+      - ./workshop/src/job:/opt/src/job
+    environment:
+      FLINK_PROPERTIES: |
+        jobmanager.rpc.address: jobmanager
+
+  taskmanager:
+    image: workshop-flink-py:1.20
+    container_name: workshop-taskmanager-1
+    command: taskmanager
+    depends_on:
+      - jobmanager
+    volumes:
+      - ./workshop/src/job:/opt/src/job
+    environment:
+      FLINK_PROPERTIES: |
+        jobmanager.rpc.address: jobmanager
+        taskmanager.numberOfTaskSlots: 2
+
+volumes:
+  postgres_data:
+
+
