@@ -8,7 +8,7 @@ This repository contains all my projects, homework solutions, and notes from the
 
 **Cohort:** 2026  
 **Duration:** January - April 2026  
-**Status:** In Progress 🏃
+**Status:** ✅ Completed
 
 ---
 
@@ -50,8 +50,8 @@ This repository contains all my projects, homework solutions, and notes from the
 - [x] **[Module 4: Analytics Engineering](#-module-4-analytics-engineering)** ✅
 - [x] **[Module 5: Data Platforms](#-module-5-data-platforms)** ✅
 - [x] **[Module 6: Batch Processing](#-module-6-batch-processing)** ✅
-- [ ] **[Module 7: Streaming](#-module-7-streaming)**
-- [ ] **[Final Project](#-final-project)**
+- [x] **[Module 7: Streaming](#-module-7-streaming)** ✅
+- [x] **[Final Project](#-final-project)** ✅
 
 ---
 
@@ -224,7 +224,7 @@ graph LR
 
 **📁 Directory:** [`Module-7-streaming/`](Module-7-streaming/)
 
-**Status:** Coming Soon
+**Status:** ✅ Completed
 
 ---
 
@@ -241,7 +241,7 @@ Apply all concepts learned to build an end-to-end data pipeline.
 - Dashboard visualization
 - Peer review submission
 
-**Status:** Coming Soon
+**Status:** ✅ Completed
 
 ---
 
@@ -302,7 +302,7 @@ Each module contains detailed homework solutions with:
 | Module 4 | dbt | ✅ Completed | [View](Module-4-analytics-engineering/README.md) |
 | Module 5 | Data Platforms | ✅ Completed | [View](Module-5-data-platforms/README.md) |
 | Module 6 | Spark | ✅ Completed | [View](Module-6-batch/README.md) |
-| Module 7 | Kafka | ⏳ Pending | [View](Module-7-streaming/) |
+| Module 7 | Kafka | ✅ Completed | [View](Module-7-streaming/README.md) |
 
 ---
 
@@ -438,6 +438,6 @@ Huge thanks to:
 
 Made with ❤️ while learning Data Engineering
 
-Last Updated: February 27, 2026
+Last Updated: March 18, 2026
 
 </div>
