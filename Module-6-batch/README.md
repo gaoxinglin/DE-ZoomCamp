@@ -107,4 +107,4 @@ spark.sql("""
 """).show()
 ```
 
-**Answer: `Arden Heights` and `Eltingville/Annadale/Prince's Bay`** (1 trip each)
+**Answer: `Arden Heights` and `Governor's Island/Ellis Island/Liberty Island` and `Eltingville/Annadale/Prince's Bay`（not in option）** (1 trip each)
